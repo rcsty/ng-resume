@@ -1,0 +1,22 @@
+<app-intro
+  title="Profile"
+  [intro]="profile?.intro"
+></app-intro>
+<div class="profile">
+  <div class="about">
+    <h3>About me</h3>
+    <p>{{ profile?.description }}</p>
+  </div>
+  <div class="photo">
+		<img src="assets/photo.jpg" alt="Profile picture">
+	</div>
+  <div class="details" *ngIf="profile?.details">
+    <h3>Details</h3>
+    <strong>Name:</strong>
+    <p>{{ profile?.details?.firstName }} {{ profile?.details?.lastName }}</p>
+    <strong>Age:</strong>
+    <p>{{ getAge() }} years</p>
+    <strong>Location:</strong>
+    <p>{{ profile?.details?.location }}</p>
+  </div>
+</div>

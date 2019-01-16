@@ -1,0 +1,20 @@
+@import 'src/assets/variables';
+
+:host {
+  * {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    color: $light-black;
+    font-size: 1.25rem;
+  }
+
+  hr {
+    margin: 2.5rem 0;
+    border-color: $light-black;
+    border-top: 1px solid $dark-white;
+    opacity: 0.2;
+  }
+}

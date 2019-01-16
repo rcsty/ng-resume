@@ -1,0 +1,22 @@
+<app-intro
+  title="Contact"
+  [intro]="contact?.intro"
+></app-intro>
+<div class="list">
+  <div class="list-half">
+    <a [href]="contact?.github" target="_blank">
+      <img src="assets/logos/github-logo.png" alt="Github logo">
+      <span>{{ contact?.github }}</span>
+    </a>
+    <a [href]="contact?.linkedin" target="_blank">
+      <img src="assets/logos/linkedin-logo.png" alt="LinkedIn logo">
+      <span>{{ contact?.linkedin }}</span>
+    </a>
+  </div>
+  <div class="list-half">
+    <a [href]="'mailto:' + contact?.email" target="_blank">
+      <i class="material-icons">email</i>
+      <span>{{ contact?.email }}</span>
+    </a>
+  </div>
+</div>

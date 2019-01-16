@@ -1,0 +1,12 @@
+$primary-color: #22A39F;
+$light-color: #F3EFE0;
+$dark-color: #434242;
+$light-black: #727878;
+$dark-white: #eee;
+
+// Responsive breakpoints
+$min-desktop-screen: 1024px;
+$max-tablet-screen: $min-desktop-screen - 1;
+$min-tablet-screen: 720px;
+$max-mobile-screen: $min-tablet-screen - 1;
+$min-mobile-screen: 320px;

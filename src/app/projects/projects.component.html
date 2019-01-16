@@ -1,0 +1,15 @@
+<app-intro
+  title="Projects"
+  [intro]="projects?.intro"
+></app-intro>
+<app-detailed-list
+  *ngFor="let project of projects?.list"
+  [header]="project?.owner"
+  [subheader]="(project?.from | date:'MMM y') + ' - ' + (( project?.to | date:'MMM y') || 'Today')"
+  [title]="project?.name"
+  [link]="project?.link"
+>
+  <p>{{ project?.functionalDescription }}</p>
+  <p>{{ project?.technicalDescription }}</p>
+  <p>{{ project?.conclusion }}</p>
+</app-detailed-list>

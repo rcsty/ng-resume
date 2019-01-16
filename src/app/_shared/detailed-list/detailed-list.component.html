@@ -1,0 +1,18 @@
+<div class="list-header">
+  <h4>{{ header }}</h4>
+  <p>{{ subheader }}</p>
+</div>
+<div class="list-content">
+  <strong>{{ title }}</strong>
+  <ng-content></ng-content>
+  <a class="location" *ngIf="location" target="_blank"
+    [href]="'https://www.google.com/maps/search/' + location">
+    <i class="material-icons">location_on</i>
+    {{ location }}
+  </a>
+  <a *ngIf="link" target="_blank"
+    [href]="link">
+    <i class="material-icons">link</i>
+    {{ link }}
+  </a>
+</div>

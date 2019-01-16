@@ -1,0 +1,19 @@
+@import 'src/assets/variables';
+
+@media only screen and (max-width: $max-mobile-screen) {
+
+  div.profile {
+    flex-direction: column;
+    text-align: center;
+
+    & > div {
+      width: 100%;
+      padding: 0;
+    }
+
+    img {
+      margin: 1rem 0;
+    }
+  }
+
+}

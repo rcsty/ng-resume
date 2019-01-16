@@ -1,0 +1,13 @@
+@import 'src/assets/variables';
+
+@media only screen and (max-width: $max-tablet-screen) {
+
+  :host {
+    header, section, footer {
+      & > * {
+        max-width: $min-tablet-screen - 48px;
+      }
+    }
+  }
+
+}

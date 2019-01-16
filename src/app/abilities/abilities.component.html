@@ -1,0 +1,5 @@
+<app-intro
+  title="Abilities"
+  [intro]="abilities?.intro"
+></app-intro>
+<app-abilities-category *ngFor="let category of abilities?.categories" [category]="category"></app-abilities-category>

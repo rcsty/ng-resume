@@ -1,0 +1,30 @@
+<app-intro
+  title="Experiences"
+  [intro]="experiences?.intro"
+></app-intro>
+<div *ngIf="experiences?.employers">
+  <h3>Employers</h3>
+  <app-detailed-list
+    *ngFor="let experience of experiences?.employers"
+    [header]="experience?.place?.name"
+    [subheader]="(experience?.from | date:'MMM y') + ' - ' + (( experience?.to | date:'MMM y') || 'Today')"
+    [title]="experience?.name"
+    [location]="experience?.place?.location"
+    [link]="experience?.place?.link"
+  >
+    <p>{{ experience?.description }}</p>
+  </app-detailed-list>
+</div>
+<div *ngIf="experiences?.education">
+  <h3>Educations</h3>
+  <app-detailed-list
+    *ngFor="let experience of experiences?.education"
+    [header]="experience?.place?.name"
+    [subheader]="(experience?.from | date:'MMM y') + ' - ' + (( experience?.to | date:'MMM y') || 'Today')"
+    [title]="experience?.name"
+    [location]="experience?.place?.location"
+    [link]="experience?.place?.link"
+  >
+    <p>{{ experience?.description }}</p>
+  </app-detailed-list>
+</div>

@@ -1,0 +1,86 @@
+@import 'src/assets/variables';
+
+html, body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+* {
+  color: $dark-color;
+}
+
+a {
+  display: flex;
+  margin-bottom: .5rem;
+  font-size: 15px;
+  color: $primary-color;
+  text-decoration: none;
+
+  i {
+    margin-right: .5rem;
+    color: $primary-color;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  line-height: 1.1;
+  margin: 1.25rem 0;
+  color: $primary-color;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin: 1.25rem 0;
+  color: $primary-color;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: .625rem 0;
+}
+
+// Classes
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-header {
+  width: calc(33% - 1rem);
+}
+
+.list-content {
+  width: calc(66% - 1rem);
+}
+
+.list-half {
+  width: calc(50% - 1rem);
+}
+
+// Mobile
+
+@media only screen and (max-width: $max-mobile-screen) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .list-header, .list-content, .list-half {
+    width: 100%;
+  }
+}

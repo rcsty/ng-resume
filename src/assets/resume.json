@@ -1,0 +1,72 @@
+{
+  "title": "Online resume",
+  "profile": {
+    "intro": "",
+    "details": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "birthDate": "1980-01-01",
+      "location": "Earth"
+    },
+    "description": "I am not a robot."
+  },
+  "experiences": {
+    "intro": "",
+    "education": [
+      {
+        "name": "Some degree",
+        "description": "I studied.",
+        "place": {
+          "name": "University",
+          "location": "Earth",
+          "link": "/"
+        },
+        "from": "2000-01-01",
+        "to": "2005-01-01"
+      }
+    ],
+    "employers": [
+      {
+        "name": "Some job",
+        "description": "I worked.",
+        "place": {
+          "name": "Job place",
+          "location": "Earth",
+          "link": "/"
+        },
+        "from": "2010-01-01"
+      }
+    ]
+  },
+  "abilities": {
+    "intro": "",
+    "categories": [
+      {
+        "name": "Skills",
+        "list": [
+          { "name": "Being a human", "score": 4 }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "intro": "",
+    "list": [
+      {
+        "name": "My project",
+        "owner": "Owner",
+        "functionalDescription": "This is a functional description.",
+        "technicalDescription": "And this is a technical description.",
+        "conclusion": "In conclusion, this is a conclusion.",
+        "from": "2015-01-01",
+        "link": "/"
+      }
+    ]
+  },
+  "contact": {
+    "intro": "",
+    "email": "xxxxxxx@gmail.com",
+    "linkedin": "https://linkedin.com/in/xxxxxxx",
+    "github": "https://github.com/xxxxxxx"
+  }
+}
