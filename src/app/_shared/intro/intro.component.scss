@@ -1,6 +1,8 @@
 @import 'src/assets/variables';
 
 :host {
+  page-break-inside: avoid;
+
   * {
     text-align: center;
   }

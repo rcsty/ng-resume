@@ -1,10 +1,14 @@
 <main *ngIf="resume">
-  <header *ngIf="resume?.title && resume?.profile">
+  <header class="no-print" *ngIf="resume?.title && resume?.profile">
     <app-home [title]="resume?.title" [profile]="resume?.profile"></app-home>
   </header>
   <section *ngIf="resume?.profile">
     <app-profile [profile]="resume?.profile"></app-profile>
   </section>
+  <section class="only-print" *ngIf="resume?.contact">
+    <app-contact [contact]="resume?.contact"></app-contact>
+  </section>
+  <section class="only-print" *ngIf="resume?.contact"></section>
   <section *ngIf="resume?.experiences">
     <app-experiences [experiences]="resume?.experiences"></app-experiences>
   </section>
@@ -14,7 +18,7 @@
   <section *ngIf="resume?.projects">
     <app-projects [projects]="resume?.projects"></app-projects>
   </section>
-  <footer *ngIf="resume?.contact">
+  <footer class="no-print" *ngIf="resume?.contact">
     <app-contact [contact]="resume?.contact"></app-contact>
   </footer>
 </main>

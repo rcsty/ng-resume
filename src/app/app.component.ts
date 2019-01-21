@@ -6,7 +6,7 @@ import { Resume } from './_model/resume';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', './app.component.tablet.scss', './app.component.mobile.scss']
+  styleUrls: ['./app.component.scss', './app.component.print.scss', './app.component.tablet.scss', './app.component.mobile.scss']
 })
 export class AppComponent implements OnInit {
 

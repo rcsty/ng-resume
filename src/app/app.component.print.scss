@@ -1,0 +1,13 @@
+@media only print {
+  section {
+    padding: 1rem 0 !important;
+  }
+
+  section.only-print {
+    display: block !important;
+  }
+
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}

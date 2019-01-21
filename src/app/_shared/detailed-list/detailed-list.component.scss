@@ -1,5 +1,10 @@
 :host {
   margin-bottom: 1.25rem;
+  page-break-inside: avoid;
+}
+
+h4 {
+  page-break-inside: avoid;
 }
 
 a.location {
